@@ -22,7 +22,7 @@ class Main extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('HI'),
+          title: const Text('HIdr'),
         ),
         body: Column(
           children: <Widget>[
