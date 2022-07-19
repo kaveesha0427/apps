@@ -60,11 +60,11 @@ class MyHomePage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
                   TextField(
-                    decoration: const InputDecoration(labelText: 'Title'),
+                    decoration: const InputDecoration(labelText: 'Title '),
                     onChanged: ((value) => enterTitle = value),
                   ),
                   TextField(
-                    decoration: const InputDecoration(labelText: 'Amount'),
+                    decoration: const InputDecoration(labelText: 'Amount '),
                     onChanged: ((value) => enterAmount = value),
                   ),
                   TextButton(
