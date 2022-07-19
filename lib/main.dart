@@ -31,11 +31,14 @@ class MyHomePage extends StatelessWidget {
     ),
   ];
 
+  late String enterTitle;
+  late String enterAmount;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter App'),
+        title: const Text('Flutter App'),
       ),
       body: Column(
         // mainAxisAlignment: MainAxisAlignment.start,
@@ -52,15 +55,17 @@ class MyHomePage extends StatelessWidget {
           Card(
             elevation: 5,
             child: Container(
-              padding: EdgeInsets.all(10),
+              padding: const EdgeInsets.all(10),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: <Widget>[
-                  const TextField(
-                    decoration: InputDecoration(labelText: 'Title'),
+                  TextField(
+                    decoration: const InputDecoration(labelText: 'Title '),
+                    onChanged: ((value) => enterTitle = value),
                   ),
-                  const TextField(
-                    decoration: InputDecoration(labelText: 'Amount'),
+                  TextField(
+                    decoration: const InputDecoration(labelText: 'Amount '),
+                    onChanged: ((value) => enterAmount = value),
                   ),
                   TextButton(
                     style: TextButton.styleFrom(
