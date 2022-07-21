@@ -16,9 +16,7 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatelessWidget {
-  late String enterTitle;
-  late String enterAmount;
-
+ 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,8 +26,8 @@ class MyHomePage extends StatelessWidget {
       body: Column(
         // mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: const <Widget>[
-          SizedBox(
+        children:  <Widget>[
+          const SizedBox(
             width: double.infinity,
             child: Card(
               color: Colors.blue,
